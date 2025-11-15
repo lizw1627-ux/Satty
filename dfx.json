@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "satty_backend": {
+      "main": "src/satty_backend/main.mo",
+      "type": "motoko"
+    },
+    "satty_frontend": {
+      "dependencies": [
+        "satty_backend"
+      ],
+      "source": [
+        "src/satty_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "satty_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
