@@ -1,7 +1,16 @@
 {
   "canisters": {
-    "satty_backend": {
-      "main": "src/satty_backend/main.mo",
+    "satty_backend": null,
+    "user_canister": {
+      "main": "src/satty_backend/user_canister/main.mo",
+      "type": "motoko"
+    },
+    "quest_canister": {
+      "main": "src/satty_backend/quest_canister/main.mo",
+      "type": "motoko"
+    },
+    "reward_canister": {
+      "main": "src/satty_backend/reward_canister/main.mo",
       "type": "motoko"
     },
     "satty_frontend": {
